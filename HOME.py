@@ -7,11 +7,11 @@ from PIL import ImageTk, Image
 splash_root = Tk()
 splash_root.title("SecreteIngredient")
 # screen size
-splash_root.geometry("300x550")
+splash_root.geometry("925x500+300+200")
 splash_root.config(bg="#FFFFFF")
 # splash screen content
 splash = ImageTk.PhotoImage(Image.open("h2.png"))
-splashLogo= Label(splash_root, image=splash).place(x=5, y=30)
+splashLogo= Label(splash_root, image=splash).place(x=300, y=30)
 
 
 label2=Label(splash_root, text='Loading...', fg='white', bg='#ff9a00') #decorate it
@@ -28,31 +28,31 @@ image_b=ImageTk.PhotoImage(Image.open('Ellipse2.png'))
 for i in range(3): #5loops
 
 
-    l1=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=120, y=400)
-    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=140, y=400)
-    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=160, y=400)
-    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=180, y=400)
+    l1=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=420, y=400)
+    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=440, y=400)
+    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=460, y=400)
+    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=480, y=400)
     splash_root.update_idletasks()
     time.sleep(0.5)
 
-    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=120, y=400)
-    l2=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=140, y=400)
-    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=160, y=400)
-    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=180, y=400)
+    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=420, y=400)
+    l2=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=440, y=400)
+    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=460, y=400)
+    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=480, y=400)
     splash_root.update_idletasks()
     time.sleep(0.5)
 
-    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=120, y=400)
-    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=140, y=400)
-    l3=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=160, y=400)
-    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=180, y=400)
+    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=420, y=400)
+    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=440, y=400)
+    l3=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=460, y=400)
+    l4=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=480, y=400)
     splash_root.update_idletasks()
     time.sleep(0.5)
 
-    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=120, y=400)
-    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=140, y=400)
-    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=160, y=400)
-    l4=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=180, y=400)
+    l1=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=420, y=400)
+    l2=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=440, y=400)
+    l3=Label(splash_root, image=image_b, border=0, relief=SUNKEN).place(x=460, y=400)
+    l4=Label(splash_root, image=image_a, border=0, relief=SUNKEN).place(x=480, y=400)
     splash_root.update_idletasks()
     time.sleep(0.5)
 
@@ -61,7 +61,7 @@ def new_win():
 
     home = Tk()
     home.title('HOME PAGE')
-    home.geometry("300x550")
+    home.geometry("925x500+300+200")
     home.config(bg="#FFFFFF")
     # anything we need to appear in main page write in this function
     # Load the image
@@ -76,12 +76,12 @@ def new_win():
 
     # Create profile Button
     myFont = Font(family='Courier', size=10, weight='bold')
-    profile_button = Button(home, text="profile", bg="#ff7400", fg='#ffffff', width=25, height=3)
+    profile_button = Button(home, text="Profile", bg="#ff7400", fg='#ffffff', width=25, height=3 , activebackground='white')
     profile_button['font'] = myFont
     profile_button.pack(pady=20)
 
     # Create QR Button
-    QR_button = Button(home, text="scanning", bg="#ff7400", fg='#ffffff', width=25, height=3)
+    QR_button = Button(home, text="Search", bg="#ff7400", fg='#ffffff', width=25, height=3, activebackground='white')
     QR_button['font'] = myFont
     QR_button.pack(pady=24)
     home.mainloop()
