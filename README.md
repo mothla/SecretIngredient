@@ -33,7 +33,8 @@ https://user-images.githubusercontent.com/95087254/199230198-85fc07d5-9c75-407e-
 ![7days](https://user-images.githubusercontent.com/74684120/199228883-f7693434-67a9-42a5-8949-fd8acbe93e46.png)
 
 **Product barcode**
-![7days_barcode](https://user-images.githubusercontent.com/74684120/199229055-1119b091-f597-481f-a6bc-b35cba0e5f7f.jpeg)
+![7days_barcode](https://user-images.githubusercontent.com/74684120/199230438-14f4ae13-53ab-40be-b330-68fe00559165.jpeg)
+
 
 
 **The barcode stored on the database**
