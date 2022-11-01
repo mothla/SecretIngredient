@@ -23,6 +23,11 @@ https://user-images.githubusercontent.com/95087254/199230180-a5e20d75-1bc7-428f-
 https://user-images.githubusercontent.com/95087254/199230198-85fc07d5-9c75-407e-b6c1-1d9e14a14c67.mov
 
 
+# If the product not stored on our database
+
+![notfound](https://user-images.githubusercontent.com/74684120/199235149-1fe5279e-9dde-4c10-af3a-629087eb6b77.png)
+
+
 
 # The Oracle database
 **We have 3 tables, one for the products information (ID, product name, product barcode). A second table with all the vendors name and IDs. Last one to connect the two tables together along with a new attribute which is the price attribute.**
