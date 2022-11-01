@@ -292,7 +292,9 @@ def Search():
             if flag:
                 break
             cv2.imshow('BarcodeScanner', frame)
-
+            cv2.waitKey(1)
+        cap.release()
+        cv2.destroyAllWindows()
         try:
             con = oracledb.connect('wajd/wajd1200@laptop-fbns74ci:1521/XE')
             cursor = con.cursor()
