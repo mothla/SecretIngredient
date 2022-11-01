@@ -302,67 +302,71 @@ def Search():
             cursor.execute(q,value)
             con.commit()
             rows = cursor.fetchall()
+            if  len(rows) == 0 :
+                label3 = Label(root, text="Sorry, we couldn't find what you are looking for.." ,
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 420, window=label3)
+            else:
+                supermarket1 = rows[0]
+                pro_name = supermarket1[0]
+                price = supermarket1[1]
+                v_name = supermarket1[2]
 
-            supermarket1 = rows[0]
-            pro_name = supermarket1[0]
-            price = supermarket1[1]
-            v_name = supermarket1[2]
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(200, 420, window=label3)
 
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(200, 420, window=label3)
+                supermarket2 = rows[1]
+                pro_name = supermarket2[0]
+                price = supermarket2[1]
+                v_name = supermarket2[2]
 
-            supermarket2 = rows[1]
-            pro_name = supermarket2[0]
-            price = supermarket2[1]
-            v_name = supermarket2[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(500, 420, window=label3)
-
-
-            supermarket3 = rows[2]
-            pro_name = supermarket3[0]
-            price = supermarket3[1]
-            v_name = supermarket3[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(790, 420, window=label3)
-
-            supermarket4 = rows[3]
-            pro_name = supermarket4[0]
-            price = supermarket4[1]
-            v_name = supermarket4[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(200, 500, window=label3)
-
-            supermarket5 = rows[4]
-            pro_name = supermarket5[0]
-            price = supermarket5[1]
-            v_name = supermarket5[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(500, 500, window=label3)
-
-            supermarket6 = rows[5]
-            pro_name = supermarket6[0]
-            price = supermarket6[1]
-            v_name = supermarket6[2]
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 420, window=label3)
 
 
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR', font=('helvetica', 12))
-            canvas1.create_window(800, 500, window=label3)
+                supermarket3 = rows[2]
+                pro_name = supermarket3[0]
+                price = supermarket3[1]
+                v_name = supermarket3[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(790, 420, window=label3)
+
+                supermarket4 = rows[3]
+                pro_name = supermarket4[0]
+                price = supermarket4[1]
+                v_name = supermarket4[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(200, 500, window=label3)
+
+                supermarket5 = rows[4]
+                pro_name = supermarket5[0]
+                price = supermarket5[1]
+                v_name = supermarket5[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 500, window=label3)
+
+                supermarket6 = rows[5]
+                pro_name = supermarket6[0]
+                price = supermarket6[1]
+                v_name = supermarket6[2]
+
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                    'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR', font=('helvetica', 12))
+                canvas1.create_window(800, 500, window=label3)
 
 
         finally:
@@ -381,67 +385,71 @@ def Search():
             cursor.execute(q)
             con.commit()
             rows = cursor.fetchall()
+            if  len(rows) == 0 :
+                label3 = Label(root, text="Sorry, we couldn't find what you are looking for.." ,
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 420, window=label3)
+            else:
+                supermarket1 = rows[0]
+                pro_name = supermarket1[0]
+                price = supermarket1[1]
+                v_name = supermarket1[2]
 
-            supermarket1 = rows[0]
-            pro_name = supermarket1[0]
-            price = supermarket1[1]
-            v_name = supermarket1[2]
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(200, 420, window=label3)
 
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(200, 420, window=label3)
+                supermarket2 = rows[1]
+                pro_name = supermarket2[0]
+                price = supermarket2[1]
+                v_name = supermarket2[2]
 
-            supermarket2 = rows[1]
-            pro_name = supermarket2[0]
-            price = supermarket2[1]
-            v_name = supermarket2[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(500, 420, window=label3)
-
-
-            supermarket3 = rows[2]
-            pro_name = supermarket3[0]
-            price = supermarket3[1]
-            v_name = supermarket3[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(790, 420, window=label3)
-
-            supermarket4 = rows[3]
-            pro_name = supermarket4[0]
-            price = supermarket4[1]
-            v_name = supermarket4[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(200, 500, window=label3)
-
-            supermarket5 = rows[4]
-            pro_name = supermarket5[0]
-            price = supermarket5[1]
-            v_name = supermarket5[2]
-
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                                      'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
-                           font=('helvetica', 12))
-            canvas1.create_window(500, 500, window=label3)
-
-            supermarket6 = rows[5]
-            pro_name = supermarket6[0]
-            price = supermarket6[1]
-            v_name = supermarket6[2]
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 420, window=label3)
 
 
-            label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
-                'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR', font=('helvetica', 12))
-            canvas1.create_window(800, 500, window=label3)
+                supermarket3 = rows[2]
+                pro_name = supermarket3[0]
+                price = supermarket3[1]
+                v_name = supermarket3[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(790, 420, window=label3)
+
+                supermarket4 = rows[3]
+                pro_name = supermarket4[0]
+                price = supermarket4[1]
+                v_name = supermarket4[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(200, 500, window=label3)
+
+                supermarket5 = rows[4]
+                pro_name = supermarket5[0]
+                price = supermarket5[1]
+                v_name = supermarket5[2]
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                                          'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR',
+                               font=('helvetica', 12))
+                canvas1.create_window(500, 500, window=label3)
+
+                supermarket6 = rows[5]
+                pro_name = supermarket6[0]
+                price = supermarket6[1]
+                v_name = supermarket6[2]
+
+
+                label3 = Label(root, text='Product name: ' + str(pro_name) + '\n' +
+                    'Supremarket:' + str(v_name) + '\nPrice:' + str(price) + 'SAR', font=('helvetica', 12))
+                canvas1.create_window(800, 500, window=label3)
 
 
         finally:
