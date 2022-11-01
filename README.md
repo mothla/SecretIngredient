@@ -10,6 +10,12 @@
 
 
 
+https://user-images.githubusercontent.com/95087254/199229733-e2e01339-0d22-4548-bcd0-395109abdc96.mp4
+
 
 
 # Scanning output
+
+
+https://user-images.githubusercontent.com/95087254/199229180-913e60d9-c098-416e-90ea-930f82a41d4e.mov
+
