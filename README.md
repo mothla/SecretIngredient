@@ -5,3 +5,11 @@
 # Connected python with database
 **We used two methods to store data, the first method is a textfile, and the second method is connecting program to Oracle database.**
 
+# Searching output
+
+
+
+
+
+
+# Scanning output
