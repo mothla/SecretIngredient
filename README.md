@@ -42,7 +42,8 @@ https://user-images.githubusercontent.com/95087254/199230198-85fc07d5-9c75-407e-
 
 
 **The barcode stored on the database**
-![barcode_database](https://user-images.githubusercontent.com/74684120/199229890-545ad887-e542-4d69-847a-aa7c06f5fba3.png)
+![barcode_database](https://user-images.githubusercontent.com/74684120/199231078-1cc9fce8-0339-477a-9973-99530727ea65.png)
+
 
 
 **A picture for the product '7 days croissant' with different prices in each supermarket place.**
