@@ -10,12 +10,26 @@
 
 
 
-https://user-images.githubusercontent.com/95087254/199229733-e2e01339-0d22-4548-bcd0-395109abdc96.mp4
-
 
 
 # Scanning output
 
 
-https://user-images.githubusercontent.com/95087254/199229180-913e60d9-c098-416e-90ea-930f82a41d4e.mov
 
+# The Oracle database
+**We have 3 tables, one for the products information (ID, product name, product barcode). A second table with all the vendors name and IDs. Last one to connect the two tables together along with a new attribute which is the price attribute.**
+
+**We scan and search about a product name '7 days croissant' -product image and barcodes pictures below-**
+
+**Product image**
+![7days](https://user-images.githubusercontent.com/74684120/199228883-f7693434-67a9-42a5-8949-fd8acbe93e46.png)
+
+**Product barcode**
+![7days_barcode](https://user-images.githubusercontent.com/74684120/199229055-1119b091-f597-481f-a6bc-b35cba0e5f7f.jpeg)
+
+
+**The barcode stored on the database**
+![barcode_database](https://user-images.githubusercontent.com/74684120/199229890-545ad887-e542-4d69-847a-aa7c06f5fba3.png)
+
+
+**A picture for the product '7 days croissant' with different prices in each supermarket place.**
