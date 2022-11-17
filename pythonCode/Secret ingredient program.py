@@ -263,7 +263,7 @@ def new_win():
     home.mainloop()
 
 def Search():
-    oracledb.init_oracle_client(lib_dir=r"C:\Users\Wajd_\Desktop\Oracle\instantclient_21_7")
+    oracledb.init_oracle_client(lib_dir=r"YourOracleInstanceLocation")
 
     root = Tk()
 
