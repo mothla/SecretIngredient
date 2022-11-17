@@ -296,7 +296,7 @@ def Search():
         cap.release()
         cv2.destroyAllWindows()
         try:
-            con = oracledb.connect('wajd/wajd1200@laptop-fbns74ci:1521/XE')
+            con = oracledb.connect('YourDBName/YourDBPassword@TheHostName:ThePortNumber/TheOracleInstanceYouHave')
             cursor = con.cursor()
             q = "SELECT pro_name,price, v_name FROM product,prices,vendors where (vendors.v_id = prices.v_id AND product.pro_id = prices.pro_id) AND (barcode = :barcode)"
             cursor.execute(q,value)
